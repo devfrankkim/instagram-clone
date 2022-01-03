@@ -5,12 +5,11 @@ let images = [
 ];
 
 let index = 0;
+
 const imgList = document.querySelector(".mainPhoto");
-console.log(imgList.src);
 
 function changeImg() {
   imgList.src = images[index];
-  console.log(imgList.src);
   index > 1 ? (index = 0) : index++;
 }
 
