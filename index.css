@@ -44,6 +44,7 @@ article {
 
 #right {
   display: flex;
+  justify-content: center;
 }
 
 .login-main {
@@ -230,6 +231,9 @@ footer {
   #left {
     display: block;
     position: relative;
+  }
+  #right {
+    padding-top: 2.5rem;
   }
   .left-container .mainPhoto {
     position: absolute;
