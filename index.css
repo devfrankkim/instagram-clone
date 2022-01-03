@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Licorice&display=swap");
+
+/* =========== Global =========== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+  text-decoration: none;
+}
+
+::placeholder {
+  font-size: 12px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background: #fafafa;
+  color: rgba(var(--i1d, 38, 38, 38), 1);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 10px;
+  line-height: 18px;
+  height: 100%;
+  letter-spacing: 0.2px;
+}
+
+/* =========== Login-main =========== */
+
+.login-main__box__title {
+  font-family: "Licorice", cursive;
+}
+
+#right {
+  display: flex;
+}
+
+.login-main {
+  display: flex;
+  justify-content: center;
+  max-width: 935px;
+  padding-bottom: 32px;
+  width: 100%;
+}
+
+.login-main__container {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  width: 562px;
+}
+
+.login-main__box {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  margin: 10px;
+  padding: 0.5rem;
+}
+
+.login-main__box__title {
+  margin: 40px auto;
+  font-size: 50px;
+  font-weight: bolder;
+  height: 30px;
+  width: 175px;
+}
+
+.login-main__signup {
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 10px 0;
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  margin: 10px;
+}
+
+.login-main__getapp {
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 10px 0;
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  margin: 10px;
+}
+
+.login-main__form {
+  margin: 0 40px;
+}
+
+.login-main__form__box {
+  border-radius: 3px;
+  margin: 0.5em 0;
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  display: flex;
+  justify-content: center;
+}
+
+.login-main__form__box input {
+  border: 0;
+  background: #fafafa;
+  width: 300px;
+  padding: 0.5rem 0.5rem;
+  font-size: 13px;
+  line-height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.login-main__form__login-button {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background-color: rgba(var(--d69, 0, 149, 246), 0.3);
+  color: #fafafa;
+  cursor: pointer;
+  padding: 0.6rem;
+  font-weight: bold;
+  text-align: center;
+  width: 284px;
+  margin: 0.7rem 0;
+}
+
+.login-main__form-or {
+  color: #8e8e8e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.login-main__form-or .dash {
+  background-color: rgba(var(--b38, 219, 219, 219), 1);
+  color: #8e8e8e;
+  display: flex;
+  height: 1px;
+  width: 110px;
+  position: relative;
+}
+.login-setup-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+.login-setup-info .facebook-login {
+  font-size: 14px;
+  font-weight: 600;
+}
+.login-setup-info a {
+  color: #00376b;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.fab.fa-facebook-square {
+  font-size: 1rem;
+  margin-right: 5px;
+}
+
+.login-main__signup {
+  background: #fff;
+  text-align: center;
+  font-size: 14px;
+  padding: 1.5rem;
+}
+
+.login-main__signup a {
+  color: #0095f6;
+  font-weight: 600;
+}
+
+.login-main__getapp {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+}
+.login-main__getapp span {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.login-main__getapp__img {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.login-main__getapp__img img {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 140px;
+  margin-right: 10px;
+}
+
+#left {
+  display: none;
+}
+
+footer {
+  font-size: 13px;
+  color: rgba(var(--f52, 142, 142, 142), 1);
+  position: absolute;
+  bottom: 3rem;
+}
+
+/* =========== Desktop =========== */
+
+@media only screen and (min-width: 876px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #left {
+    display: block;
+    position: relative;
+  }
+  .left-container .mainPhoto {
+    position: absolute;
+    top: 6.2rem;
+    left: 9.432rem;
+    animation: mainPhoto 3s infinite linear;
+  }
+  @keyframes mainPhoto {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+}
