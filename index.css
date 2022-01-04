@@ -59,7 +59,6 @@ article {
   padding: 5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   width: 562px;
 }
@@ -85,8 +84,6 @@ article {
 
 .login-main__signup {
   border: 1px solid;
-  border-radius: 10px;
-  padding: 10px 0;
   border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
   margin: 10px;
 }
@@ -131,7 +128,7 @@ article {
   padding: 0.6rem;
   font-weight: bold;
   text-align: center;
-  width: 310px;
+  width: 285px;
   margin: 0.7rem 0;
 }
 
