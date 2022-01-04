@@ -48,7 +48,10 @@ showPassword.addEventListener("click", (e) => {
 // ====== Login test ======
 loginButton.addEventListener("click", (e) => {
   e.preventDefault();
-  if (loginID.value === userID && loginPassword.value === userPassword) {
+  if (
+    loginID.value.toLowerCase() === userID.toLowerCase() &&
+    loginPassword.value === userPassword
+  ) {
     window.location = "main.html";
   } else {
     loginIncorrect.style.display = "block";
