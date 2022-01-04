@@ -49,7 +49,7 @@ showPassword.addEventListener("click", (e) => {
 loginButton.addEventListener("click", (e) => {
   e.preventDefault();
   if (loginID.value === userID && loginPassword.value === userPassword) {
-    window.location.href = "./main.html";
+    window.location = "main.html";
   } else {
     loginIncorrect.style.display = "block";
   }
