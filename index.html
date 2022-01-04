@@ -42,14 +42,29 @@
               <form class="login-main__form" action="" method="">
                 <div class="login-main__form__box">
                   <input
+                    id="login-id"
                     type="text"
                     placeholder="Phone number, username, or email"
                   />
                 </div>
                 <div class="login-main__form__box">
-                  <input type="text" placeholder="Password" />
+                  <input
+                    id="login-password"
+                    type="password"
+                    placeholder="Password"
+                  />
+                  <button
+                    class="show-password login-main__form__box-password-show"
+                  >
+                    Show
+                  </button>
                 </div>
-                <button class="login-main__form__login-button">Log In</button>
+                <button
+                  id="login-button"
+                  class="login-main__form__login-button"
+                >
+                  Log In
+                </button>
                 <div class="login-main__form-or">
                   <div class="dash"></div>
                   <div>OR</div>
@@ -101,5 +116,6 @@
       <div class="copyright">© 2022 Instagram from Meta</div>
     </footer>
     <script type="text/javascript" src="mainPhoto.js"></script>
+    <script type="text/javascript" src="login.js"></script>
   </body>
 </html>
