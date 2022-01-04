@@ -223,6 +223,15 @@ article {
   margin-right: 10px;
 }
 
+.login-incorrect {
+  display: none;
+  color: #ed4956;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 1rem;
+  line-height: 1.2rem;
+}
+
 #left {
   display: none;
 }
