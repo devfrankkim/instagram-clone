@@ -2,10 +2,12 @@ const loginID = document.getElementById("login-id");
 const loginPassword = document.getElementById("login-password");
 const loginButton = document.getElementById("login-button");
 const showPassword = document.querySelector(".show-password");
+const loginIncorrect = document.querySelector(".login-incorrect");
 
-const userID = "";
-const userPassword = "";
+const userID = "insta";
+const userPassword = "123456";
 
+// ====== Login button colour changes ======
 loginID.addEventListener("input", (e) => {
   let inputValue = e.target.value;
   if (inputValue.length > 0 && loginPassword.value.length > 5) {
@@ -30,7 +32,7 @@ loginPassword.addEventListener("input", (e) => {
     : (showPassword.style.display = "block");
 });
 
-// when entering > it goes to button (hide or show)
+// ====== Show/hide password ======
 showPassword.addEventListener("click", (e) => {
   e.preventDefault();
 
@@ -41,4 +43,14 @@ showPassword.addEventListener("click", (e) => {
   loginPassword.type === "password"
     ? (showPassword.textContent = "Show")
     : (showPassword.textContent = "Hide");
+});
+
+// ====== Login test ======
+loginButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (loginID.value === userID && loginPassword.value === userPassword) {
+    window.location.href = "./main.html";
+  } else {
+    loginIncorrect.style.display = "block";
+  }
 });
