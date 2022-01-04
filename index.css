@@ -59,6 +59,8 @@ article {
   padding: 5rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 562px;
 }
 
@@ -73,11 +75,12 @@ article {
 }
 
 .login-main__box__title {
-  margin: 40px auto;
-  font-size: 50px;
-  font-weight: bolder;
-  height: 30px;
-  width: 175px;
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem;
+}
+.login-main__box__title__img {
+  width: 180px;
 }
 
 .login-main__signup {
