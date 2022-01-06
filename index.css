@@ -28,7 +28,8 @@ body {
   line-height: 18px;
   height: 100%;
   letter-spacing: 0.2px;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 /* =========== Login-main =========== */
