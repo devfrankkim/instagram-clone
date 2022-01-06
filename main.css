@@ -9,6 +9,7 @@
   list-style-type: none;
   outline: none;
   text-decoration: none;
+  text-overflow: ellipsis;
 }
 
 body {
@@ -17,6 +18,14 @@ body {
   background: #fafafa;
   color: #8e8e8e;
   font-size: 14px;
+}
+
+button {
+  border: none;
+  background: none;
+}
+.pointer {
+  cursor: pointer;
 }
 /* =========== nav =========== */
 
@@ -73,6 +82,28 @@ body {
   flex-direction: row;
   padding: 23px;
 }
+
+.story__container__organizer__parent li > button {
+  /* display: flex; */
+  border: 2px solid red;
+  padding: 2px;
+  position: relative;
+}
+.story__container__organizer__parent li > button > img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5px;
+}
+.story__container__organizer__parent li > button > span {
+  color: #4b4b4b;
+  font-size: 12px;
+  letter-spacing: 0.1px;
+  opacity: 0.7;
+}
+.story__container__organizer__parent li:nth-last-child(1) {
+  overflow: hidden;
+}
 .story__container__organizer__parent__content button {
   border-radius: 50%;
   border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
@@ -127,6 +158,7 @@ body {
 .content__container-info .interaction {
   display: flex;
   justify-content: space-between;
+  margin: 14px 0;
 }
 .content__container-info .interaction button {
   border: none;
@@ -152,6 +184,7 @@ body {
   font-size: 14px;
   font-weight: 600;
 }
+
 .explanation__account-more,
 .explanation__account-id,
 .view-comments,
@@ -165,7 +198,13 @@ body {
   font-size: 10px;
   letter-spacing: 0.2px;
 }
-
+.add-comments {
+  display: none;
+}
+.section-2__main__right {
+  display: none;
+}
+/* ====== (min-width: 640px) ====== */
 @media only screen and (min-width: 640px) {
   .nav-box__search-bar {
     width: 200px;
@@ -174,7 +213,56 @@ body {
     width: 80px;
     text-overflow: ellipsis;
   }
+  .content__container-info {
+    padding: 0;
+  }
+
+  .likes,
+  .interaction,
+  .explanation__account-id,
+  explanation__account-text,
+  explanation__account-more,
+  .view-comments,
+  .hours-ago,
+  .add-comments {
+    padding: 0 15px;
+  }
+  .add-comments {
+    border-top: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+    display: block;
+    padding: 1rem;
+  }
+  .add-comments ::placeholder {
+    font-size: 13px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 400;
+  }
+
+  .add-comments-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .add-comments-container__emoji-comment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .add-comments .type-comment {
+    height: 20px;
+    display: flex;
+    border: 0;
+    padding: 0 2rem;
+  }
+  .add-comments .post {
+    color: rgba(var(--d69, 0, 149, 246), 1);
+    opacity: 0.3;
+    font-size: 13px;
+    font-weight: 600;
+  }
 }
+/* ====== (min-width: 645px) ====== */
 @media only screen and (min-width: 645px) {
   /* =========== Nav =========== */
   .section-2 nav {
@@ -242,8 +330,85 @@ body {
   }
 }
 
+/* ====== (min-width: 720px) ====== */
 @media only screen and (min-width: 720px) {
+  .section-1 {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
   .nav-box__search-bar {
     width: 280px;
+  }
+}
+
+/* ====== (min-width: 1000px) ====== */
+@media only screen and (min-width: 1000px) {
+  .section-1 {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  }
+  .nav-box {
+    width: 990px;
+    margin-right: 10px;
+  }
+  .section-2__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .section-2__main__organizer {
+    margin-right: 30px;
+  }
+  .section-2__main__right {
+    margin-top: 40px;
+    display: block;
+    width: 293px;
+    padding: 0 15px;
+  }
+  .my-account {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 5px 0;
+  }
+  .my-account__img img {
+    width: 56px;
+    height: 56px;
+  }
+  .my-account__id {
+    display: flex;
+    flex-direction: column;
+  }
+  .my-account__id span:nth-child(1) {
+    color: #262626;
+    font-weight: 600;
+  }
+  .blue-color {
+    color: #0095f6;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  .suggestions-for-you {
+    margin: 1rem 0;
+    font-weight: 600;
+  }
+  .suggestions-for-you :nth-child(2) {
+    color: #262626;
+    font-size: 12px;
+    font-weight: 600;
+    color: pointer;
+  }
+  .flexing-column-space-between {
+    display: flex;
+    justify-content: space-between;
+  }
+  .my-account .mini-profile-img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 5px;
   }
 }
