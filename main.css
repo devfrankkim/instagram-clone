@@ -111,8 +111,10 @@ body {
 }
 
 .content__container-content img {
-  width: 540px;
-  height: 560px;
+  width: 100%;
+  max-width: 640px;
+  min-height: 500px;
+  height: auto;
   object-fit: contain;
   padding: 0 2rem;
 }
