@@ -32,12 +32,15 @@ body {
 .nav-box__1 {
   display: flex;
   align-items: center;
-  width: 100%;
 }
 .nav-box__1 .logo-title {
   width: 103px;
   height: 29px;
   object-fit: contain;
+}
+
+.nav-box__search-bar {
+  display: none;
 }
 
 .nav-box__2__container__emojis {
@@ -135,16 +138,112 @@ body {
 .interaction {
   padding: 6px 0;
 }
+.interaction-1,
+.interaction button {
+  cursor: pointer;
+}
 
+.interaction :hover {
+  color: #8e8e8e;
+}
 .likes,
 .explanation__account-id {
   color: #262626;
   font-size: 14px;
   font-weight: 600;
 }
+.explanation__account-more,
+.explanation__account-id,
+.view-comments,
+.hours-ago {
+  cursor: pointer;
+}
 
 .hours-ago {
   margin-top: 10px;
+  margin-bottom: 20px;
   font-size: 10px;
   letter-spacing: 0.2px;
+}
+
+@media only screen and (min-width: 640px) {
+  .nav-box__search-bar {
+    width: 200px;
+  }
+  .search-bar input {
+    width: 80px;
+    text-overflow: ellipsis;
+  }
+}
+@media only screen and (min-width: 645px) {
+  /* =========== Nav =========== */
+  .section-2 nav {
+    background: #fff;
+    border-bottom: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  }
+  .nav-box {
+    border-bottom: none;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 20px;
+  }
+  .nav-box__search-bar {
+    display: block;
+    background-color: #efefef;
+    border-radius: 5px;
+    margin-left: 15px;
+    width: auto;
+  }
+  .search-bar {
+    padding: 0 13px;
+    width: auto;
+  }
+  .search-bar form {
+    display: flex;
+    align-items: center;
+  }
+  .search-bar input {
+    border: none;
+    background-color: #efefef;
+    padding: 10px 16px;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    opacity: 0.6;
+    width: 100%;
+  }
+
+  /* =========== Article - story =========== */
+  .story {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+  }
+  .story__container {
+    border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  }
+
+  .story__container__organizer {
+    width: 550px;
+  }
+  /* =========== Article - content =========== */
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content__container {
+    border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .nav-box__search-bar {
+    width: 280px;
+  }
 }
