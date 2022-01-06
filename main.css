@@ -6,27 +6,143 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* list-style-type: none; */
+  list-style-type: none;
   outline: none;
   text-decoration: none;
 }
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: #fafafa;
+  color: #8e8e8e;
+  font-size: 14px;
+}
 /* =========== nav =========== */
 
 .nav-box {
+  border-bottom: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  background: #fff;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  border-bottom: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
-  padding: 20px;
+  padding: 15px 20px;
 }
 .nav-box__1 {
+  display: flex;
+  align-items: center;
   width: 100%;
 }
-
 .nav-box__1 .logo-title {
-  width: 130px;
-  height: 30px;
+  width: 103px;
+  height: 29px;
   object-fit: contain;
+}
+
+.nav-box__2__container__emojis {
+  display: flex;
+  flex-direction: row;
+}
+
+.emojis-box {
+  margin-left: 1.5rem;
+}
+.new-post {
+  border: none;
+  background: none;
+}
+
+.profile-img {
+  width: 24px;
+  height: 24px;
+}
+
+.story {
+  margin-bottom: 1.5rem;
+}
+.story__container {
+  border-bottom: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+}
+.story__container__organizer__parent {
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  padding: 23px;
+}
+.story__container__organizer__parent__content button {
+  border-radius: 50%;
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  cursor: pointer;
+  margin-right: 1rem;
+  width: 66px;
+  height: 66px;
+}
+.content__container {
+  background: #fff;
+}
+.content__container-account {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.content__container-account__container {
+  display: flex;
+  align-items: center;
+}
+.account:hover {
+  cursor: pointer;
+}
+.account-id {
+  color: #262626;
+  margin-left: 1rem;
+  font-size: 14px;
+  font-weight: 600;
+}
+.account-id:hover {
+  text-decoration: underline;
+}
+.account-profile__image {
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+
+.content__container-content img {
+  width: 540px;
+  height: 560px;
+  object-fit: contain;
+  padding: 0 2rem;
+}
+.content__container-info {
+  padding: 0 15px;
+}
+.content__container-info .interaction {
+  display: flex;
+  justify-content: space-between;
+}
+.content__container-info .interaction button {
+  border: none;
+  background: none;
+}
+.interaction span:nth-child(2) {
+  margin: 0 0.5rem;
+}
+.interaction {
+  padding: 6px 0;
+}
+
+.likes,
+.explanation__account-id {
+  color: #262626;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.hours-ago {
+  margin-top: 10px;
+  font-size: 10px;
+  letter-spacing: 0.2px;
 }
