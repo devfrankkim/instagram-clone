@@ -31,6 +31,10 @@ button {
   cursor: pointer;
 }
 
+.display-none {
+  display: none;
+}
+
 /* =========== nav =========== */
 
 .nav-box {
@@ -147,7 +151,42 @@ button {
   width: 36px;
   height: 36px;
 }
+.content__container-content {
+  position: relative;
+}
+.content__container-content .slider-1 {
+  border-radius: 50%;
+  background-color: #ebebeb;
+  color: rgb(126, 126, 126);
+  cursor: pointer;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  padding: 16px 8px;
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
+}
 
+.content__container-content .slider-2 {
+  border-radius: 50%;
+  background-color: #ebebeb;
+  color: rgb(126, 126, 126);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  padding: 16px 8px;
+  height: 30px;
+  width: 30px;
+  font-size: 20px;
+}
 .content__container-content img {
   width: 100%;
   max-width: 640px;
@@ -208,6 +247,7 @@ button {
 .section-2__main__right {
   display: none;
 }
+
 /* ====== (min-width: 640px) ====== */
 @media only screen and (min-width: 640px) {
   .nav-box__search-bar {
