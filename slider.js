@@ -19,18 +19,18 @@ contentSlider1.addEventListener("click", () => {
   if (0 < index || index < IMAGES.length - 1) {
     mainImage.src = IMAGES[--index];
   }
-  if (index === 0) {
-    contentSlider1.style.display = "none";
-    contentSlider2.style.display = "flex";
-  }
+
+  index === 0
+    ? (contentSlider1.style.display = "none")
+    : (contentSlider2.style.display = "flex");
 });
 
 contentSlider2.addEventListener("click", () => {
   if (index < IMAGES.length) {
     mainImage.src = IMAGES[++index];
   }
-  if (index === IMAGES.length - 1) {
-    contentSlider2.style.display = "none";
-    contentSlider1.style.display = "flex";
-  }
+
+  index === IMAGES.length - 1
+    ? (contentSlider2.style.display = "none")
+    : (contentSlider1.style.display = "flex");
 });
