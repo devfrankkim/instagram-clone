@@ -12,6 +12,7 @@
   text-overflow: ellipsis;
 }
 
+html,
 body {
   max-width: 100vw;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -21,6 +22,7 @@ body {
   font-size: 14px;
   overflow-x: hidden;
   overflow-y: auto;
+  scroll-behavior: smooth;
 }
 
 button {
@@ -78,17 +80,26 @@ button {
   height: 24px;
 }
 
+/* =============== story =============== */
+
 .story {
   margin-bottom: 1.5rem;
 }
 .story__container {
   border-bottom: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
 }
+.story__container__organizer {
+  display: flex;
+  position: relative;
+}
 .story__container__organizer__parent {
   background: #fff;
   display: flex;
   flex-direction: row;
+  align-items: center;
   padding: 23px;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .story__container__organizer__parent li > button {
@@ -120,6 +131,36 @@ button {
   width: 66px;
   height: 66px;
 }
+
+.story__container__slider-box button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  z-index: 999;
+  border-radius: 50%;
+  background-color: #e9e9e9;
+  color: #ababab;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  font-size: 20px;
+  padding: 13px;
+  opacity: 0.9;
+}
+.story__container__slider-box .slider-1 {
+  display: none;
+  position: absolute;
+  left: 10px;
+  top: 40%;
+}
+.story__container__slider-box .slider-2 {
+  position: absolute;
+  right: 10px;
+  top: 40%;
+}
+
+/* =============== content ===============  */
 .content__container {
   background: #fff;
 }
@@ -153,6 +194,9 @@ button {
 }
 .content__container-content {
   position: relative;
+}
+.content__container-content button {
+  opacity: 0.7;
 }
 .content__container-content .slider-1 {
   border-radius: 50%;
