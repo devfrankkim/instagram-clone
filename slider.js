@@ -34,3 +34,34 @@ contentSlider2.addEventListener("click", () => {
     ? (contentSlider2.style.display = "none")
     : (contentSlider1.style.display = "flex");
 });
+
+// ============= Scroll - story - Slider =============
+
+let storyContainer = document.querySelector(
+  ".story__container__organizer__parent"
+);
+
+let storySlider1 = document.querySelector(
+  ".story__container__slider-box .slider-1"
+);
+let storySlider2 = document.querySelector(
+  ".story__container__slider-box .slider-2"
+);
+
+storySlider1.addEventListener("click", (e) => {
+  storyContainer.scrollBy({
+    top: 210,
+    left: -10000,
+    behavior: "smooth",
+  });
+  storySlider1.style.display = "none";
+});
+
+storySlider2.addEventListener("click", (e) => {
+  storyContainer.scrollBy({
+    top: 210,
+    left: 210,
+    behavior: "smooth",
+  });
+  storySlider1.style.display = "flex";
+});
