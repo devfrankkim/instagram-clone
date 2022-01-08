@@ -355,6 +355,7 @@ button {
     align-items: center;
   }
   .add-comments .type-comment {
+    width: 500px;
     height: 20px;
     display: flex;
     border: 0;
