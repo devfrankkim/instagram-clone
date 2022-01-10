@@ -65,3 +65,5 @@ storySlider2.addEventListener("click", (e) => {
   });
   storySlider1.style.display = "flex";
 });
+
+// switch to scrollLeft
