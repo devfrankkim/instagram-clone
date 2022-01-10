@@ -309,6 +309,11 @@ button {
   }
 }
 
+.comment-style {
+  color: #262626;
+  padding-left: 15px;
+  line-height: 1.5rem;
+}
 /* ====== (min-width: 640px) ====== */
 @media only screen and (min-width: 640px) {
   .nav-box__search-bar {
@@ -422,7 +427,7 @@ button {
   }
 
   .story__container__organizer {
-    width: 550px;
+    width: 580px;
   }
   /* =========== Article - content =========== */
 
