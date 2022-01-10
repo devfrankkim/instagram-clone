@@ -642,9 +642,12 @@
                     <span class="explanation__account-more">more</span>
                   </div>
                   <div class="view-comments">View all 19 comments</div>
-                  <div class="hours-ago">5 HOURS AGO</div>
+                  <div class="comment-box"></div>
+                  <div class="hours-ago">
+                    <span>5 HOURS AGO</span>
+                  </div>
                   <div class="add-comments">
-                    <form action="" method="">
+                    <form action="" method="post" class="add-form">
                       <div class="add-comments-container">
                         <div class="add-comments-container__emoji-comment">
                           <button class="wpO6b" type="button">
@@ -665,14 +668,19 @@
                               </svg>
                             </div>
                           </button>
-                          <textarea
+                          <input
+                            class="type-comment"
+                            type="text"
+                            placeholder="Add a comment..."
+                          />
+                          <!-- <textarea
                             class="type-comment"
                             name=""
                             id=""
                             cols="30"
                             rows="10"
                             placeholder="Add a comment..."
-                          ></textarea>
+                          ></textarea> -->
                         </div>
                         <button class="post" type="button">Post</button>
                       </div>
