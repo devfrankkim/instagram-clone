@@ -68,8 +68,6 @@ const toggleArrowStory = (e) => {
     : (storySlider1.style.display = "flex");
 
   //  max scrollLeft >= scrollWidth - clientWidth - (less than 1 move)
-  console.log(e.target.scrollWidth - e.target.clientWidth);
-  console.log(e.target.scrollLeft);
   e.target.scrollLeft >= e.target.scrollWidth - e.target.clientWidth - 5
     ? (storySlider2.style.display = "none")
     : (storySlider2.style.display = "flex");
