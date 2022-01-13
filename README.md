@@ -15,13 +15,13 @@
 - [x] Add story
 - [x] Slider -> remove arrows when no data available
 - [x] Add/Post comments
+- [x] Button(login/post) color changes when data is available.
 - [x] Responsiveness
 
 ## Bugs to fix
 
 - [x] Entering password, it goes to (show/hide)
 - Reason: button default type
-
 - [x] Hide arrows when no data available.
 - Reason: ScrollWidth, clientWidth, scrollLeft
 
