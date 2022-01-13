@@ -25,12 +25,10 @@ const checkLoginPassword = (e) => {
     loginButton.style.opacity = "1";
     loginButton.style.cursor = "pointer";
   }
-
   if (loginID.value.length === 0 || passwordValue.length < 6) {
     loginButton.style.opacity = "0.3";
     loginButton.style.cursor = "default";
   }
-
   passwordValue.length === 0
     ? (showPassword.style.display = "none")
     : (showPassword.style.display = "block");
@@ -55,7 +53,8 @@ showPassword.addEventListener("click", showHidePassword);
 // ====== Login test ======
 const signIn = (e) => {
   e.preventDefault();
-  loginID.value.toLowerCase() === userID.toLowerCase() &&
+
+  loginID.value.toLowerCase().trim() === userID.toLowerCase() &&
   loginPassword.value === userPassword
     ? (window.location = "main.html")
     : (loginIncorrect.style.display = "block");
