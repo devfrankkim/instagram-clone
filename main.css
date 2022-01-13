@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Licorice&display=swap");
 
 /* =========== Global =========== */
-
 * {
   margin: 0;
   padding: 0;
@@ -502,13 +501,6 @@ button {
     position: absolute;
     left: 180px;
   }
-  .section-2__main__right {
-    display: block;
-    width: 293px;
-    padding: 0 15px;
-    position: fixed;
-    right: 170px;
-  }
   .my-account {
     display: flex;
     justify-content: space-between;
@@ -551,5 +543,71 @@ button {
     width: 32px;
     height: 32px;
     margin-bottom: 5px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .section-2__main__right {
+    display: block;
+    width: 293px;
+    padding: 0 15px;
+    position: fixed;
+    right: 235px;
+  }
+}
+
+@media only screen and (min-width: 1350px) {
+  .section-2__main__organizer {
+    padding-left: 2rem;
+  }
+  .section-2__main__right {
+    right: 190px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .section-2__main__organizer {
+    padding-left: 4rem;
+  }
+
+  .section-2__main__right {
+    right: 220px;
+  }
+}
+@media only screen and (min-width: 1480px) {
+  .section-2__main__organizer {
+    padding-left: 6rem;
+  }
+
+  .section-2__main__right {
+    right: 250px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .section-2__main__organizer {
+    padding-left: 11rem;
+  }
+
+  .section-2__main__right {
+    right: 310px;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  .section-2__main__organizer {
+    padding-left: 22rem;
+  }
+
+  .section-2__main__right {
+    right: 470px;
+  }
+}
+@media only screen and (min-width: 1651px) {
+  .section-2__main__organizer {
+    padding-left: 12rem;
+  }
+
+  .section-2__main__right {
+    right: 340px;
   }
 }
