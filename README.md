@@ -24,3 +24,5 @@
 
 - [x] Hide arrows when no data available.
 - Reason: ScrollWidth, clientWidth, scrollLeft
+
+## Upcoming features
