@@ -48,9 +48,6 @@ svg {
   z-index: 9999;
 }
 
-.section-2 {
-  margin-top: 90px;
-}
 .section-2__main__organizer {
   margin-top: 10px;
 }
@@ -62,7 +59,6 @@ svg {
 /* =========== nav =========== */
 
 .nav-box {
-  border-bottom: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
   background: #fff;
   display: flex;
   flex-direction: row;
@@ -373,8 +369,22 @@ svg {
   font-size: 13px;
   font-weight: 600;
 }
+
+@media only screen and (max-width: 640px) {
+  .section-2 {
+    margin-top: 50px;
+  }
+}
+
 /* ====== (min-width: 640px) ====== */
 @media only screen and (min-width: 640px) {
+  .nav-box {
+    border-bottom: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  }
+  .section-2 {
+    margin-top: 90px;
+  }
+
   .nav-box__search-bar {
     width: 200px;
   }
@@ -382,6 +392,7 @@ svg {
     width: 80px;
     text-overflow: ellipsis;
   }
+
   .content__container-info {
     padding: 0;
   }
