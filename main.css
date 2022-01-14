@@ -574,34 +574,46 @@ svg {
     width: 293px;
     padding: 0 15px;
     position: fixed;
-    right: 235px;
+    right: 12rem;
+  }
+  .section-2__main__right {
+    right: 12rem;
   }
 }
 
 @media only screen and (min-width: 1350px) {
   .section-2__main__organizer {
-    padding-left: 2rem;
+    padding-left: 3rem;
   }
   .section-2__main__right {
-    right: 190px;
+    right: 14rem;
   }
 }
 @media only screen and (min-width: 1400px) {
   .section-2__main__organizer {
-    padding-left: 4rem;
+    padding-left: 5rem;
   }
 
   .section-2__main__right {
-    right: 220px;
+    right: 16rem;
   }
 }
-@media only screen and (min-width: 1480px) {
+@media only screen and (min-width: 1500px) {
   .section-2__main__organizer {
-    padding-left: 6rem;
+    padding-left: 7rem;
   }
 
   .section-2__main__right {
-    right: 250px;
+    right: 18rem;
+  }
+}
+@media only screen and (min-width: 1550px) {
+  .section-2__main__organizer {
+    padding-left: 9rem;
+  }
+
+  .section-2__main__right {
+    right: 20rem;
   }
 }
 
@@ -611,25 +623,183 @@ svg {
   }
 
   .section-2__main__right {
-    right: 310px;
+    right: 22rem;
   }
 }
 
 @media only screen and (min-width: 1650px) {
   .section-2__main__organizer {
-    padding-left: 22rem;
-  }
-
-  .section-2__main__right {
-    right: 470px;
-  }
-}
-@media only screen and (min-width: 1651px) {
-  .section-2__main__organizer {
     padding-left: 12rem;
   }
 
   .section-2__main__right {
-    right: 340px;
+    right: 24rem;
+  }
+}
+@media only screen and (min-width: 1700px) {
+  .section-2__main__organizer {
+    padding-left: 14rem;
+  }
+
+  .section-2__main__right {
+    right: 26rem;
+  }
+}
+
+@media only screen and (min-width: 1750px) {
+  .section-2__main__organizer {
+    padding-left: 16rem;
+  }
+
+  .section-2__main__right {
+    right: 28rem;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .section-2__main__organizer {
+    padding-left: 18rem;
+  }
+
+  .section-2__main__right {
+    right: 30rem;
+  }
+}
+
+@media only screen and (min-width: 1850px) {
+  .section-2__main__organizer {
+    padding-left: 19rem;
+  }
+
+  .section-2__main__right {
+    right: 32rem;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .section-2__main__organizer {
+    padding-left: 21rem;
+  }
+
+  .section-2__main__right {
+    right: 33rem;
+  }
+}
+
+@media only screen and (min-width: 1950px) {
+  .section-2__main__organizer {
+    padding-left: 23rem;
+  }
+
+  .section-2__main__right {
+    right: 35rem;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .section-2__main__organizer {
+    padding-left: 25rem;
+  }
+
+  .section-2__main__right {
+    right: 37rem;
+  }
+}
+
+@media only screen and (min-width: 2050px) {
+  .section-2__main__organizer {
+    padding-left: 27rem;
+  }
+
+  .section-2__main__right {
+    right: 39rem;
+  }
+}
+
+@media only screen and (min-width: 2100px) {
+  .section-2__main__organizer {
+    padding-left: 28rem;
+  }
+
+  .section-2__main__right {
+    right: 40rem;
+  }
+}
+
+@media only screen and (min-width: 2150px) {
+  .section-2__main__organizer {
+    padding-left: 31rem;
+  }
+
+  .section-2__main__right {
+    right: 43rem;
+  }
+}
+@media only screen and (min-width: 2200px) {
+  .section-2__main__organizer {
+    padding-left: 32rem;
+  }
+
+  .section-2__main__right {
+    right: 43rem;
+  }
+}
+
+@media only screen and (min-width: 2250px) {
+  .section-2__main__organizer {
+    padding-left: 33rem;
+  }
+
+  .section-2__main__right {
+    right: 45rem;
+  }
+}
+
+@media only screen and (min-width: 2300px) {
+  .section-2__main__organizer {
+    padding-left: 35rem;
+  }
+
+  .section-2__main__right {
+    right: 47rem;
+  }
+}
+
+@media only screen and (min-width: 2350px) {
+  .section-2__main__organizer {
+    padding-left: 37rem;
+  }
+
+  .section-2__main__right {
+    right: 49rem;
+  }
+}
+
+@media only screen and (min-width: 2400px) {
+  .section-2__main__organizer {
+    padding-left: 39rem;
+  }
+
+  .section-2__main__right {
+    right: 51rem;
+  }
+}
+
+@media only screen and (min-width: 2450px) {
+  .section-2__main__organizer {
+    padding-left: 41rem;
+  }
+
+  .section-2__main__right {
+    right: 53rem;
+  }
+}
+@media only screen and (min-width: 2500px) {
+  .section-2__main__organizer {
+    padding-left: 43rem;
+  }
+
+  .section-2__main__right {
+    right: 55rem;
   }
 }
