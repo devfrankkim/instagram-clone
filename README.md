@@ -14,7 +14,7 @@
 - [x] Add contents
 - [x] Add story
 - [x] Slider -> remove arrows when no data available
-- [x] Add/Post comments
+- [x] Add/Post/Delete comments
 - [x] Button(login/post) color changes when data is available.
 - [x] Responsiveness
 
