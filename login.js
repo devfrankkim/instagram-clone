@@ -8,7 +8,7 @@ const userPassword = "123456";
 
 // ====== Login button colour changes ======
 const checkLoginID = (e) => {
-  let inputValue = e.target.value;
+  const inputValue = e.target.value;
   if (inputValue.length > 0 && loginPassword.value.length > 5) {
     loginButton.style.opacity = "1";
     loginButton.style.cursor = "pointer";
@@ -20,7 +20,7 @@ const checkLoginID = (e) => {
 };
 
 const checkLoginPassword = (e) => {
-  let passwordValue = e.target.value;
+  const passwordValue = e.target.value;
   if (loginID.value.length > 0 && passwordValue.length > 5) {
     loginButton.style.opacity = "1";
     loginButton.style.cursor = "pointer";
