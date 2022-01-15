@@ -241,35 +241,3 @@ footer {
   font-size: 13px;
   color: rgba(var(--f52, 142, 142, 142), 1);
 }
-
-/* =========== Desktop =========== */
-
-@media only screen and (min-width: 876px) {
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #left {
-    display: block;
-    position: relative;
-  }
-  #right {
-    padding-top: 2.5rem;
-  }
-  .left-container .mainPhoto {
-    position: absolute;
-    top: 6.2rem;
-    left: 9.432rem;
-    animation: mainPhoto 3s infinite linear;
-  }
-  @keyframes mainPhoto {
-    0% {
-      opacity: 1;
-    }
-
-    100% {
-      opacity: 0;
-    }
-  }
-}
