@@ -3,8 +3,8 @@ const loginPassword = document.getElementById("login-password");
 const loginButton = document.getElementById("login-button");
 const showPassword = document.querySelector(".show-password");
 const loginIncorrect = document.querySelector(".login-incorrect");
-const userID = "insta";
-const userPassword = "123456";
+const USER_ID = "insta";
+const USER_PASSWORD = "123456";
 
 // ====== Login button colour changes ======
 const checkLoginID = (e) => {
@@ -54,8 +54,8 @@ showPassword.addEventListener("click", showHidePassword);
 const signIn = (e) => {
   e.preventDefault();
 
-  loginID.value.toLowerCase().trim() === userID.toLowerCase() &&
-  loginPassword.value === userPassword
+  loginID.value.toLowerCase().trim() === USER_ID.toLowerCase() &&
+  loginPassword.value === USER_PASSWORD
     ? (window.location = "main.html")
     : (loginIncorrect.style.display = "block");
 };
