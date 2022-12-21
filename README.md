@@ -1,7 +1,7 @@
 ## Account
 
-`User ID` : `insta`  
-`User Password` : `123456`
+`User account` : `insta`  
+`User PW` : `instagram`
 
 ## Check list
 
